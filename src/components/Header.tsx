@@ -29,7 +29,7 @@ function Header() {
     ]
 
     return (
-        <section className="fixed top-0 w-full z-30 backdrop-blur-xl bg-my-white/60 font-semibold text-[15px]">
+        <section className="fixed top-0 w-full z-30 backdrop-blur-xl bg-my-white/60 font-medium text-[15px]">
             <div className="w-full flex justify-between items-center lg:py-4 py-2 px-3 max-w-7xl mx-auto relative">
                 <Link href="/" className="">
                     <Image
@@ -57,7 +57,7 @@ function Header() {
                     })}
                 </div>
                 <div className="lg:flex hidden">
-                    <Button btnText="Get Started" className="bg-my-black text-my-white hover:text-my-black hover:bg-my-white hover:ring hover:ring-my-gray"/>
+                    <Button btnText="Get Started" className="rounded-2xl bg-my-black text-my-white hover:text-my-black hover:bg-my-white hover:ring hover:ring-my-gray px-6 py-3"/>
                 </div>
                 <div onClick={toggleMenu} className="flex flex-col space-y-1 cursor-pointer lg:hidden items-end mr-5">
                     <div className="h-0.5 w-6 bg-my-black rounded-b-full"></div>
