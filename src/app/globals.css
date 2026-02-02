@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-my-green: #1FC16D;
+  --color-my-green: #10B981;
+  --color-my-deep-green: #09986B;
   --color-my-blue: #0FA6E5;
   --color-my-gray: #5e6b7c;
   --color-my-black: #0F172A;
   --color-my-white: #FBFCFD;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
 }
 
 body {
