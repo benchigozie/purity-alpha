@@ -14,55 +14,55 @@ type TestimonialProps = {
 
 const testimonials: TestimonialProps[] = [
     {
-        name: "Sarah Jenkins",
+        name: "Sarah Jenkins 1",
         position: "TECH INFLUENCER",
         content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
         image: "/images/client1.jpg",
     },
     {
-        name: "Sarah Jenkins",
+        name: "Sarah Jenkins 2",
         position: "TECH INFLUENCER",
         content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
         image: "/images/client1.jpg",
     },
     {
-        name: "Sarah Jenkins",
+        name: "Sarah Jenkins 3",
         position: "TECH INFLUENCER",
         content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
         image: "/images/client1.jpg",
     },
     {
-        name: "Sarah Jenkins",
+        name: "Sarah Jenkins 4",
         position: "TECH INFLUENCER",
         content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
         image: "/images/client1.jpg",
     },
     {
-        name: "Sarah Jenkins",
+        name: "Sarah Jenkins 5",
         position: "TECH INFLUENCER",
         content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
         image: "/images/client1.jpg",
     },
     {
-        name: "Sarah Jenkins",
+        name: "Sarah Jenkins 6",
         position: "TECH INFLUENCER",
         content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
         image: "/images/client1.jpg",
     },
     {
-        name: "Sarah Jenkins",
+        name: "Sarah Jenkins 7",
         position: "TECH INFLUENCER",
         content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
         image: "/images/client1.jpg",
     },
     {
-        name: "Sarah Jenkins",
+        name: "Sarah Jenkins 8",
         position: "TECH INFLUENCER",
         content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
         image: "/images/client1.jpg",
     },
     {
-        name: "Sarah Jenkins",
+        name: "Sarah Jenkins 9",
         position: "TECH INFLUENCER",
         content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
         image: "/images/client1.jpg",
@@ -99,12 +99,12 @@ const AlphaCircle = () => {
 
     const next = () => {
         setIndex((prev) =>
-            Math.min(prev + 1, testimonials.length - visibleCount)
+            Math.min(prev + visibleCount, testimonials.length - visibleCount)
         )
     }
 
     const prev = () => {
-        setIndex((prev) => Math.max(prev - 1, 0))
+        setIndex((prev) => Math.max(prev - visibleCount, 0))
     }
 
     return (
@@ -118,14 +118,14 @@ const AlphaCircle = () => {
                     <div className="flex gap-4">
                         <button
                             onClick={prev} disabled={index === 0}
-                            className="h-max p-4 ring ring-my-gray/20 rounded-full cursor-pointer hover:bg-my-blue transition hover:text-my-white hover:scale-120"
+                            className="h-max p-4 ring ring-my-gray/20 rounded-full cursor-pointer hover:bg-my-blue transition hover:text-my-white hover:scale-120 disabled:opacity-40 disabled:cursor-not-allowed"
                         >
                             <ArrowLeft />
                         </button>
                         <button
                             onClick={next}
                             disabled={index >= testimonials.length - visibleCount}
-                            className="h-max p-4 ring ring-my-gray/20 rounded-full cursor-pointer hover:bg-my-blue transition hover:text-my-white hover:scale-120"
+                            className="h-max p-4 ring ring-my-gray/20 rounded-full cursor-pointer hover:bg-my-blue transition hover:text-my-white hover:scale-120 disabled:opacity-40 disabled:cursor-not-allowed"
                         >
                             <ArrowRight />
                         </button>
