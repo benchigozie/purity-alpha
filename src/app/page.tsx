@@ -1,6 +1,7 @@
 import EliteSpaces from "@/components/EliteSpaces";
 import Hero from "@/components/Hero";
 import Offer from "@/components/Offer";
+import Protocol from "@/components/Protocol";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Offer />
       <EliteSpaces/>
+      <Protocol />
    </div>
   );
 }
