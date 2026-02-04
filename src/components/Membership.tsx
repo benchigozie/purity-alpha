@@ -3,7 +3,7 @@ import { CircleStar } from "lucide-react";
 
 const Membership = () => {
     return (
-        <section className="my-16 md:my-22 mx-auto">
+        <section className="mt-16 md:mt-22 mx-auto">
             <div className="max-w-6xl mx-auto px-3 h-full flex flex-col gap-8 md:gap-12">
                 <div className="flex flex-col gap-4">
                     <h2 className="text-my-black text-4xl md:text-6xl font-bold">Memberships</h2>
