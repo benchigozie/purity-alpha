@@ -2,6 +2,7 @@ import AlphaCircle from "@/components/AlphaCircle";
 import CTA from "@/components/CTA";
 import EliteSpaces from "@/components/EliteSpaces";
 import Hero from "@/components/Hero";
+import Membership from "@/components/Membership";
 import Offer from "@/components/Offer";
 import Protocol from "@/components/Protocol";
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Protocol />
       <AlphaCircle />
       <CTA />
+      <Membership />
    </div>
   );
 }
