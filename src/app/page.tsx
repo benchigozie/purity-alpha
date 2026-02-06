@@ -1,23 +1,26 @@
 import AlphaCircle from "@/components/AlphaCircle";
+import BookMeeting from "@/components/BookMeeting";
 import CTA from "@/components/CTA";
 import EliteSpaces from "@/components/EliteSpaces";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
+import { Meeting } from "@/components/Meeting";
 import Membership from "@/components/Membership";
 import Offer from "@/components/Offer";
 import Protocol from "@/components/Protocol";
 
 export default function Home() {
   return (
-   <div className="bg-my-white">
+    <div className="bg-my-white">
       <Hero />
       <Offer />
-      <EliteSpaces/>
+      <EliteSpaces />
       <Protocol />
       <AlphaCircle />
       <CTA />
       <Membership />
+      <BookMeeting />
       <Footer />
-   </div>
+    </div>
   );
 }
