@@ -8,7 +8,7 @@ import Button from "./Button"
 
 type NavLink = {
     name: string
-    path: string
+    sectionId: string
 }
 
 function Header() {
@@ -22,14 +22,13 @@ function Header() {
     }
 
     const navLinks: NavLink[] = [
-        { name: "Studios", path: "/" },
-        { name: "Services", path: "/a" },
-        { name: "Stories", path: "/b" },
-        { name: "Pricing", path: "/c" },
+        { name: "Studios", sectionId: "/" },
+        { name: "Stories", sectionId: "/b" },
+        { name: "Pricing", sectionId: "/c" },
     ]
 
     return (
-        <section className="fixed top-0 w-full z-30 backdrop-blur-xl bg-my-white/60 font-medium text-[15px]">
+        <section className="fixed top-0 w-full z-30 backdrop-blur-xl bg-my-white/80 font-medium text-[15px] supports-backdrop-filter:bg-my-white/60">
             <div className="w-full flex justify-between items-center lg:py-4 py-2 px-3 max-w-7xl mx-auto relative">
                 <Link href="/" className="">
                     <Image
@@ -39,20 +38,16 @@ function Header() {
                         height={50}
                     />
                 </Link>
-                <div className="max-w-86 w-full lg:flex justify-between hidden">
+                <div className="max-w-72 w-full lg:flex justify-between hidden">
                     {navLinks.map((link) => {
-                        const isActive = pathname === link.path;
-
+                        
                         return (
-                            <Link
+                            <button
                                 key={link.name}
-                                href={link.path}
-                                className={`px-4 py-2 rounded-full transition-all duration-300 ${isActive
-                                    ? "border border-my-gray/30 shadow-lg shadow-my-gray/5" : ""
-                                    }`}
+                                className="px-4 py-2 rounded-full transition-all duration-300 hover:ring hover:ring-my-gray/30 hover:shadow-lg hover:shadow-my-gray/5 cursor-pointer"
                             >
                                 {link.name}
-                            </Link>
+                            </button>
                         );
                     })}
                 </div>
@@ -68,13 +63,11 @@ function Header() {
                 <div onClick={toggleMenu} className={`mt-2 mr-2 duration-500 top-full bg-my-white  absolute py-6 right-0 w-42 rounded-2xl flex flex-col ring ring-my-gray/20 ${menuState ? "opacity-100 visible" : "opacity-0 invisible"} lg:hidden`}>
                     {navLinks.map((link) => {
                         return (
-                            <Link
-                                key={link.name}
-                                href={link.path}
-                                className="py-2 px-6 hover:bg-my-blue-white/30 transition-all"
+                            <button
+                                className="py-2 px-6 hover:bg-my-blue-white/30 transition-all cursor-pointer"
                             >
                                 {link.name}
-                            </Link>
+                            </button>
                         );
                     })}
                 </div>
