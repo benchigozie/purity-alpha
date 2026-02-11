@@ -4,6 +4,7 @@ import Image from "next/image"
 import Button from "./Button"
 import { TrendingUp } from "lucide-react"
 import { motion } from "framer-motion"
+import { scrollToId } from "@/utils/ScrollToId"
 
 const fadeOnly = {
     hidden: { opacity: 0 },
@@ -22,10 +23,10 @@ const fromDown = {
 
 const Hero = () => {
     return (
-        <section className="pt-16 md:pt-15 min-h-[80vh] md:min-h-screen flex justify-center">
-            <div className="max-w-6xl mx-auto px-3 my-auto">
+        <section className="pt-14 md:pt-18 lg:pt-15 min-h-[80vh] md:min-h-screen flex justify-center">
+            <div className="max-w-6xl mx-auto px-5 my-auto">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12 lg:gap-8 pt-10 md:pt-0">
-                    <div className="flex flex-col gap-8 justify-center">
+                    <div className="flex flex-col gap-2 md:gap-8 justify-center">
                         <div className="overflow-hidden">
                             <motion.div
                                 initial="hidden"
@@ -39,7 +40,7 @@ const Hero = () => {
                                     </div>
                                     <div className='z-10 w-2.5 relative h-2.5 bg-my-green rounded-full'></div>
                                 </div>
-                               <p   className="text-xs md:text-sm font-medium tracking-wider">
+                                <p className="text-[11px] md:text-sm font-medium tracking-wider">
                                     THE WORLD'S ELITE CREATOR NETWORK
                                 </p>
                             </motion.div>
@@ -50,27 +51,31 @@ const Hero = () => {
                                 animate="visible"
                                 variants={fromLeft}
                                 transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                                className="text-my-black text-4xl md:text-7xl font-bold">Scale Your <span className="text-transparent bg-linear-to-r from-my-blue to-my-green bg-clip-text"
+                                className="text-my-black text-4xl  md:text-6xl lg:text-7xl font-bold mt-3 md:mt-0">Scale Your <br /><span className="text-transparent bg-linear-to-r from-my-blue to-my-green bg-clip-text"
                                 >Creative</span> Power</motion.h1>
                         </div>
                         <div className="overflow-hidden">
-                            <motion.p 
-                             initial="hidden"
-                             animate="visible"
-                             variants={fromDown}
-                             transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
-                            className="text-lg md:text-xl font-light"
+                            <motion.p
+                                initial="hidden"
+                                animate="visible"
+                                variants={fromDown}
+                                transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
+                                className="text-lg md:text-xl font-light"
                             >We provide the high-performance infrastructure, strategy, and execution needed for creators to dominate the digital landscape.</motion.p>
                         </div>
-                        <motion.div 
-                         initial="hidden"
-                         animate="visible"
-                         variants={fromDown}
-                         transition={{ duration: 0.6, delay:1.5, ease: "easeOut" }}
+                        <motion.div
+                            initial="hidden"
+                            animate="visible"
+                            variants={fromDown}
+                            transition={{ duration: 0.6, delay: 1.5, ease: "easeOut" }}
                         >
-                            <div className="flex flex-col md:flex-row gap-3">
-                                <Button btnText="Book Studio Session" className="rounded-3xl px-6 py-3 md:px-8 md:py-5 bg-my-blue lg:text-lg  text-my-white hover:text-my-blue hover:scale-105 hover:bg-my-white hover:ring hover:ring-my-blue/40" />
-                                <Button btnText="Our Portfolio" className="rounded-3xl px-6 py-3 md:px-8 md:py-5 bg-my-white lg:text-lg  text-my-black hover:scale-105 hover:bg-my-white ring ring-my-gray/20" />
+                            <div className="flex flex-col md:flex-row gap-3 mt-6 md:mt-0">
+                                <div onClick={() => scrollToId("membership")}>
+                                    <Button btnText="Book Studio Session" className="w-full rounded-3xl px-6 py-3 md:px-8 md:py-5 bg-my-blue lg:text-lg  text-my-white hover:text-my-blue hover:scale-105 hover:bg-my-white hover:ring hover:ring-my-blue/40" />
+                                </div>
+                                <div onClick={() => scrollToId("alpha-circle")}>
+                                    <Button btnText="Our Portfolio" className="w-full rounded-3xl px-6 py-3 md:px-8 md:py-5 bg-my-white lg:text-lg  text-my-black hover:scale-105 hover:bg-my-white ring ring-my-gray/20" />
+                                </div>
                             </div>
                         </motion.div>
                     </div>

@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { Check } from "lucide-react";
+import { scrollToId } from "@/utils/ScrollToId";
 
 
 const Offer = () => {
@@ -15,16 +18,20 @@ const Offer = () => {
                             <p className="text-xs font-medium tracking-wider text-my-deep-green">LIMITED TIME ENTRY OFFER</p>
                         </div>
                         <div>
-                            <h2 className="text-my-black text-4xl md:text-7xl font-bold">Start Your Journey for</h2>
+                            <h2 className="text-my-black text-4xl md:text-6xl lg:text-7xl font-bold">Start Your Journey for</h2>
                             <div className="flex items-baseline">
-                                <p className="text-my-green text-4xl md:text-7xl font-bold"><span className="font-inter">&#8358;</span>30,000</p>
+                                <p className="text-my-green text-4xl md:text-6xl lg:text-7xl font-bold"><span className="font-inter">&#8358;</span>30,000</p>
                                 <p className="text-xl font-semibold">/month</p>
                             </div>
                         </div>
                         <p className="text-xl">Exclusively for single creators. Get started at our lowest entry price for your first 3 months. No barriers, just growth.</p>
                         <div className="flex flex-col md:flex-row gap-3">
-                            <button className="font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-6 py-3 md:px-8 md:py-5 bg-my-deep-green  text-my-white hover:text-my-deep-green hover:scale-105 hover:bg-my-white hover:ring hover:ring-my-deep-green/40 flex gap-3 justify-center items-center" ><span>Claim Offer Now</span> <span><Image src="/images/power.png" alt="" width={13} height={13} /></span></button>
-                            <button className="flex gap-3 font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-4 py-3 md:px-8 md:py-5 bg-my-white hover:scale-105 hover:bg-my-white ring ring-my-gray/20 items-center justify-center" ><span className="p-1 h-max rounded-full bg-my-green"> <Check className="text-my-white relative top-0.5" size={15} strokeWidth={2.2} color="#FBFCFD" /></span> <span>Standard Price <span className="font-inter">&#8358;</span>80k/mo</span></button>
+                            <div onClick={() => scrollToId("membership")}>
+                                <button className="font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-6 py-3 md:px-8 md:py-5 bg-my-deep-green  text-my-white hover:scale-105 flex gap-3 justify-center items-center" ><span>Claim Offer Now</span> <span><Image src="/images/power.png" alt="" width={13} height={13} /></span></button>
+                            </div>
+                            <div onClick={() => scrollToId("membership")}>
+                                <button className="flex gap-3 font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-4 py-3 md:px-8 md:py-5 bg-my-white hover:scale-105 hover:bg-my-white ring ring-my-gray/20 items-center justify-center" ><span className="p-1 h-max rounded-full bg-my-green"> <Check className="text-my-white relative top-0.5" size={15} strokeWidth={2.2} color="#FBFCFD" /></span> <span>Standard Price <span className="font-inter">&#8358;</span>80k/mo</span></button>
+                            </div>
                         </div>
                     </div>
                     <div className="bg-my-white rounded-4xl p-10 ring-2 ring-my-gray/10 flex flex-col justify-center items-center gap-4 my-auto">

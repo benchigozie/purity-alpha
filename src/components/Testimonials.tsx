@@ -69,7 +69,7 @@ const testimonials: TestimonialProps[] = [
     },
 ]
 
-const AlphaCircle = () => {
+const Testimonials = () => {
 
     const [visibleCount, setVisibleCount] = useState(3);
     const [index, setIndex] = useState(0);
@@ -108,12 +108,12 @@ const AlphaCircle = () => {
     }
 
     return (
-        <section className="mt-16 md:mt-22 mx-auto">
+        <section className="mt-16 md:mt-22 scroll-mt-22 mx-auto" id="alpha-circle">
             <div className="max-w-6xl mx-auto px-3 h-full flex flex-col gap-8 md:gap-12">
                 <div className="flex justify-between">
                     <div className="flex flex-col gap-4">
-                        <h2 className="text-my-black text-4xl md:text-6xl font-bold">Alpha Circle</h2>
-                        <p className="text-lg max-w-xl">The results of elite creators using our infrastructure.</p>
+                        <h2 className="px-2 md:px-0 text-my-black text-4xl md:text-6xl font-bold">Testimonials</h2>
+                        <p className="text-lg max-w-xl px-2 md:px-0">Hear what our clients say about working with us.</p>
                     </div>
                     <div className="flex gap-4">
                         <button
@@ -132,7 +132,7 @@ const AlphaCircle = () => {
                     </div>
                 </div>
                 <div>
-                    <div className={`min-h-100 overflow-clip grid gap-6 ${visibleCount === 1 ? "grid-cols-1" :
+                    <div className={`min-h-100 grid gap-6 ${visibleCount === 1 ? "grid-cols-1" :
                         visibleCount === 2 ? "grid-cols-2" :
                             "grid-cols-3"
                         }`}>
@@ -168,4 +168,4 @@ const AlphaCircle = () => {
     )
 }
 
-export default AlphaCircle
+export default Testimonials;
