@@ -132,7 +132,7 @@ const Testimonials = () => {
                     </div>
                 </div>
                 <div>
-                    <div className={`min-h-100 grid gap-6 ${visibleCount === 1 ? "grid-cols-1" :
+                    <div className={`min-h-100 overflow-clip grid gap-6 ${visibleCount === 1 ? "grid-cols-1" :
                         visibleCount === 2 ? "grid-cols-2" :
                             "grid-cols-3"
                         }`}>
@@ -144,7 +144,7 @@ const Testimonials = () => {
                                     animate={{ opacity: 1, x: 0 }}
                                     exit={{ opacity: 0, x: -40 }}
                                     transition={{ duration: 0.35, ease: "easeOut" }}
-                                    className="bg-white p-10 rounded-4xl shadow-md shadow-my-gray/10 flex flex-col justify-center gap-6 md:gap-8">
+                                    className="bg-white m-2 p-10 rounded-4xl shadow-md shadow-my-gray/10 flex flex-col justify-center gap-6 md:gap-8">
                                     <div className="flex gap-5 justify-left items-center">
                                         <div className="rounded-3xl p-1 h-max bg-my-white shadow-md shadow-my-gray/20">
                                             <Image src={t.image} alt={t.name} width={60} height={60} className="rounded-3xl" />
