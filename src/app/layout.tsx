@@ -18,7 +18,7 @@ export const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Alpha Media",
-  description: "Pure Innit",
+  description: "Alpha Media is a content creation agency that helps creators and brands grow their online presence through strategic content creation and production.",
   icons: {
     icon: "/images/alphamedialogo.png",
   }
