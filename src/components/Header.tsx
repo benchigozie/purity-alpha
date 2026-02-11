@@ -33,7 +33,7 @@ function Header() {
             <div className="w-full flex justify-between items-center lg:py-4 py-2 px-3 max-w-7xl mx-auto relative">
                 <Link href="/" className="">
                     <Image
-                        src="/images/purityalphalogo.svg"
+                        src="/images/alphamedialogo.png"
                         alt="Purity Alpha Logo"
                         width={50}
                         height={50}
@@ -62,12 +62,13 @@ function Header() {
                     <div className="h-0.5 w-4 bg-my-black rounded-b-full"></div>
                 </div>
 
-                <div onClick={toggleMenu} className={`mt-2 mr-2 duration-500 top-full bg-my-white  absolute py-6 right-0 w-42 rounded-2xl flex flex-col ring ring-my-gray/20 ${menuState ? "opacity-100 visible" : "opacity-0 invisible"} lg:hidden`}>
+                <div onClick={toggleMenu} className={`mt-2 mr-2 duration-500 top-full bg-my-white  absolute py-6 right-0 w-42 rounded-2xl flex flex-col ring ring-my-gray/10 ${menuState ? "opacity-100 visible" : "opacity-0 invisible"} lg:hidden`}>
                     {navLinks.map((link) => {
                         return (
                             <button
                             key={link.name}
-                                className="py-2 px-6 hover:bg-my-blue-white/30 transition-all cursor-pointer"
+                            onClick={() => scrollToId(link.sectionId)}
+                                className="py-2 px-6 hover:bg-my-blue/30 transition-all cursor-pointer"
                             >
                                 {link.name}
                             </button>

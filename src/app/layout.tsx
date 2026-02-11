@@ -17,10 +17,10 @@ export const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: "Purity Alpha",
+  title: "Alpha Media",
   description: "Pure Innit",
   icons: {
-    icon: "/images/purityalphalogo.svg",
+    icon: "/images/alphamedialogo.png",
   }
 };
 

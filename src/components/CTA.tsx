@@ -1,3 +1,5 @@
+"use client"
+import { scrollToId } from "@/utils/ScrollToId"
 import { Rocket } from "lucide-react"
 
 const CTA = () => {
@@ -6,7 +8,7 @@ const CTA = () => {
             <div className="max-w-6xl mx-auto h-full flex flex-col items-center gap-5 md:gap-9 rounded-4xl md:rounded-[60px] bg-linear-to-r from-my-blue to-my-green px-5 md:px-15 py-18 md:py-24 text-my-white text-center shadow-2xl shadow-my-blue/40">
                 <h2 className="text-3xl md:text-7xl font-bold px-2 md:px-0">Ready to Get Started?</h2>
                 <p className="text-lg md:text-xl max-w-150 px-2 md:px-0">Create Content Like a Pro. We provide fully-equipped video, podcast, and content spaces that help creators and brands produce high-quality content, without stress.</p>
-                <button className="flex items-center gap-3 bg-my-white px-7 md:px-14 py-4 md:py-6 rounded-2xl md:rounded-4xl w-max mx-auto text-my-black font-semibold md:font-bold text-lg md:text-2xl hover:scale-105 duration-300 transition-all cursor-pointer"><span>Book a Session</span><Rocket size={25}/></button>
+                <button onClick={() => scrollToId('membership')} className="flex items-center gap-3 bg-my-white px-7 md:px-14 py-4 md:py-6 rounded-2xl md:rounded-4xl w-max mx-auto text-my-black font-semibold md:font-bold text-lg md:text-2xl hover:scale-105 duration-300 transition-all cursor-pointer"><span>Book a Session</span><Rocket size={25}/></button>
             </div>
         </section>
     )

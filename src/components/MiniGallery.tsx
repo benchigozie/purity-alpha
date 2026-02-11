@@ -1,5 +1,6 @@
 "use client";
 
+import { scrollToId } from "@/utils/ScrollToId";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -35,7 +36,7 @@ const MiniGallery = ({ images, name }: { images: string[], name: string }) => {
 
             <div className="px-6 absolute bottom-6 w-full flex flex-col gap-4">
                 <p className="text-my-white text-4xl font-bold">{name}</p>
-                <button className="w-full px-7 py-4 ring ring-my-white/50 rounded-3xl text-center text-my-white bg-my-gray/40 backdrop-blur-sm hover:bg-my-blue transition-all duration-300 hover:cursor-pointer">Reserve Space</button>
+                <button onClick={() => scrollToId('membership')} className="w-full px-7 py-4 ring ring-my-white/50 rounded-3xl text-center text-my-white bg-my-gray/40 backdrop-blur-sm hover:bg-my-blue transition-all duration-300 hover:cursor-pointer">Reserve Space</button>
             </div>
 
             <div className="absolute bottom-36 left-4 flex gap-1.5 px-5">
