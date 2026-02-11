@@ -9,7 +9,7 @@ const Offer = () => {
     return (
         <section className="mt-20 md:mt-16 mx-auto">
             <div className="max-w-6xl mx-auto px-3 h-full">
-                <div className="ring-2 md:ring-3 ring-my-blue rounded-4xl md:rounded-[60px] p-7 md:p-12 grid gap-4 md:gap-1  grid-cols-1 md:grid-cols-[2fr_1fr]">
+                <div className="ring-2 md:ring-3 ring-my-blue rounded-4xl md:rounded-[60px] p-7 md:p-12 grid gap-6 lg:gap-1  grid-cols-1 md:grid-cols-[2fr_1fr]">
                     <div className="flex flex-col gap-7">
                         <div className="px-6 py-2 bg-my-green/20 flex items-center rounded-full gap-2 w-max">
                             <div className='rounded-full'>
@@ -27,10 +27,10 @@ const Offer = () => {
                         <p className="text-xl">Exclusively for single creators. Get started at our lowest entry price for your first 3 months. No barriers, just growth.</p>
                         <div className="flex flex-col md:flex-row gap-3">
                             <div onClick={() => scrollToId("membership")}>
-                                <button className="font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-6 py-3 md:px-8 md:py-5 bg-my-deep-green  text-my-white hover:scale-105 flex gap-3 justify-center items-center" ><span>Claim Offer Now</span> <span><Image src="/images/power.png" alt="" width={13} height={13} /></span></button>
+                                <button className="w-full font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-6 py-3 md:px-8 md:py-5 bg-my-deep-green  text-my-white hover:scale-105 flex gap-3 justify-center items-center" ><span>Claim Offer Now</span> <span><Image src="/images/power.png" alt="" width={13} height={13} /></span></button>
                             </div>
                             <div onClick={() => scrollToId("membership")}>
-                                <button className="flex gap-3 font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-4 py-3 md:px-8 md:py-5 bg-my-white hover:scale-105 hover:bg-my-white ring ring-my-gray/20 items-center justify-center" ><span className="p-1 h-max rounded-full bg-my-green"> <Check className="text-my-white relative top-0.5" size={15} strokeWidth={2.2} color="#FBFCFD" /></span> <span>Standard Price <span className="font-inter">&#8358;</span>80k/mo</span></button>
+                                <button className="w-full flex gap-3 font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-4 py-3 md:px-8 md:py-5 bg-my-white hover:scale-105 hover:bg-my-white ring ring-my-gray/20 items-center justify-center" ><span className="p-1 h-max rounded-full bg-my-green"> <Check className="text-my-white relative top-0.5" size={15} strokeWidth={2.2} color="#FBFCFD" /></span> <span>Standard Price <span className="font-inter">&#8358;</span>80k/mo</span></button>
                             </div>
                         </div>
                     </div>

@@ -21,7 +21,7 @@ const Process = () => {
             <div className="max-w-6xl mx-auto px-3 flex flex-col">
                 <h2 className="text-my-black text-4xl md:text-6xl font-bold px-2">Our Process</h2>
                 <p className="text-lg max-w-xl mt-3 px-2">Alpha Media runs the system. You bring the vision. We manage everything that happens off-camera so your creativity stays front and center.</p>
-                <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-3">
+                <div className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
                  { cards.map((card) => (
                     <div
                         key={card.heading}
