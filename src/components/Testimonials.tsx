@@ -110,7 +110,7 @@ const Testimonials = () => {
     return (
         <section className="mt-16 md:mt-22 scroll-mt-22 mx-auto" id="alpha-circle">
             <div className="max-w-6xl mx-auto px-3 h-full flex flex-col gap-8 md:gap-12">
-                <div className="flex justify-between">
+                <div className="flex flex-col gap-4 md:flex-row justify-between">
                     <div className="flex flex-col gap-4">
                         <h2 className="px-2 md:px-0 text-my-black text-4xl md:text-6xl font-bold">Testimonials</h2>
                         <p className="text-lg max-w-xl px-2 md:px-0">Hear what our clients say about working with us.</p>
