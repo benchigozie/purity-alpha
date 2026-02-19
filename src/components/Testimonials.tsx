@@ -14,6 +14,12 @@ type TestimonialProps = {
 
 const testimonials: TestimonialProps[] = [
     {
+        name: "Segun Festus",
+        position: "Alpha Media Client",
+        content: "Nice place, equipped with quality human and material resources. Quite a studio of distinction and quality",
+        image: "/images/segun.png",
+    },
+    {
         name: "Akomolede Samuel",
         position: "Alpha Media Client",
         content: "I love the space it very comfortable and the staff there are friendly and nice and there internet there is awesome.",
@@ -31,12 +37,7 @@ const testimonials: TestimonialProps[] = [
         content: "Nice process for the recording. The set up is okay. Lovely ambience with professional crew.",
         image: "/images/etrem.png",
     },
-    {
-        name: "Segun Festus",
-        position: "Alpha Media Client",
-        content: "Nice place, equipped with quality human and material resources. Quite a studio of distinction and quality",
-        image: "/images/segun.png",
-    },
+    
     {
         name: "Alex Akinmayowa",
         position: "Alpha Media Client",
@@ -128,11 +129,11 @@ const Testimonials = () => {
                                     transition={{ duration: 0.35, ease: "easeOut" }}
                                     className="bg-white m-2 p-10 rounded-4xl shadow-md shadow-my-gray/10 flex flex-col justify-center gap-6 md:gap-8">
                                     <div className="flex gap-5 justify-left items-center">
-                                        <div className="rounded-full p-1 h-max bg-my-white shadow-md shadow-my-gray/20">
+                                        <div className="rounded-full p-1 h-max bg-my-white shadow-md shadow-my-gray/20 w-15">
                                             <Image src={t.image} alt={t.name} width={60} height={60} className="rounded-3xl" />
                                         </div>
                                         <div>
-                                            <p className="text-2xl font-bold text-my-black">{t.name}</p>
+                                            <p className="text-xl font-bold text-my-black">{t.name}</p>
                                             <p className="text-[17px] font-medium tracking-wider text-my-blue">{t.position}</p>
                                         </div>
                                     </div>
