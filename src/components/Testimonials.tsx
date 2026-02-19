@@ -29,7 +29,7 @@ const testimonials: TestimonialProps[] = [
         name: "ETREM TV",
         position: "Alpha Media Client",
         content: "Nice process for the recording. The set up is okay. Lovely ambience with professional crew.",
-        image: "/images/emrem.png",
+        image: "/images/etrem.png",
     },
     {
         name: "Segun Festus",
