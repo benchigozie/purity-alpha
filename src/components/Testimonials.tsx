@@ -14,58 +14,40 @@ type TestimonialProps = {
 
 const testimonials: TestimonialProps[] = [
     {
-        name: "Sarah Jenkins 1",
-        position: "TECH INFLUENCER",
-        content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
-        image: "/images/client1.jpg",
+        name: "Akomolede Samuel",
+        position: "Alpha Media Client",
+        content: "I love the space it very comfortable and the staff there are friendly and nice and there internet there is awesome.",
+        image: "/images/user.png",
     },
     {
-        name: "Sarah Jenkins 2",
-        position: "TECH INFLUENCER",
-        content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
-        image: "/images/client1.jpg",
+        name: "Obado Henry",
+        position: "Alpha Media Client",
+        content: "Beautiful coworking office spaces for businesses or individuals looking for a cool and serene atmosphere to keep the business lines in place.",
+        image: "/images/obado.png",
     },
     {
-        name: "Sarah Jenkins 3",
-        position: "TECH INFLUENCER",
-        content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
-        image: "/images/client1.jpg",
+        name: "ETREM TV",
+        position: "Alpha Media Client",
+        content: "Nice process for the recording. The set up is okay. Lovely ambience with professional crew.",
+        image: "/images/emrem.png",
     },
     {
-        name: "Sarah Jenkins 4",
-        position: "TECH INFLUENCER",
-        content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
-        image: "/images/client1.jpg",
+        name: "Segun Festus",
+        position: "Alpha Media Client",
+        content: "Nice place, equipped with quality human and material resources. Quite a studio of distinction and quality",
+        image: "/images/segun.png",
     },
     {
-        name: "Sarah Jenkins 5",
-        position: "TECH INFLUENCER",
-        content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
-        image: "/images/client1.jpg",
+        name: "Alex Akinmayowa",
+        position: "Alpha Media Client",
+        content: "Great experience friendly and helpful staff I recommend them for all your content creation needs.",
+        image: "/images/user.png",
     },
     {
-        name: "Sarah Jenkins 6",
-        position: "TECH INFLUENCER",
-        content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
-        image: "/images/client1.jpg",
-    },
-    {
-        name: "Sarah Jenkins 7",
-        position: "TECH INFLUENCER",
-        content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
-        image: "/images/client1.jpg",
-    },
-    {
-        name: "Sarah Jenkins 8",
-        position: "TECH INFLUENCER",
-        content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
-        image: "/images/client1.jpg",
-    },
-    {
-        name: "Sarah Jenkins 9",
-        position: "TECH INFLUENCER",
-        content: "Purity Alpha literally took my YouTube channel from 2k to 50k subs in just 3 months. Their strategy is elite.",
-        image: "/images/client1.jpg",
+        name: "Design Thinking With BayoGPT",
+        position: "Alpha Media Client",
+        content: "Lovely reception, nice experience and friendly staff.",
+        image: "/images/bayo.png",
     },
 ]
 
@@ -146,7 +128,7 @@ const Testimonials = () => {
                                     transition={{ duration: 0.35, ease: "easeOut" }}
                                     className="bg-white m-2 p-10 rounded-4xl shadow-md shadow-my-gray/10 flex flex-col justify-center gap-6 md:gap-8">
                                     <div className="flex gap-5 justify-left items-center">
-                                        <div className="rounded-3xl p-1 h-max bg-my-white shadow-md shadow-my-gray/20">
+                                        <div className="rounded-full p-1 h-max bg-my-white shadow-md shadow-my-gray/20">
                                             <Image src={t.image} alt={t.name} width={60} height={60} className="rounded-3xl" />
                                         </div>
                                         <div>

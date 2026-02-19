@@ -8,27 +8,53 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const locations = [
     {
-        title: "Alpha Pro Studio",
+        title: "The Matrix",
         images: [
-            "/images/demostudio.jpg",
-            "/images/demostudio.jpg",
-            "/images/demostudio.jpg",
+            "/images/studios/thematrix1.jpg",
+            "/images/studios/thematrix2.jpg",
+            "/images/studios/thematrix3.jpg",
+            "/images/studios/thematrix4.jpg",
         ],
     },
     {
-        title: "The Creator Loft",
+        title: "The Cozy Room",
         images: [
-            "/images/demostudio.jpg",
-            "/images/demostudio.jpg",
-            "/images/demostudio.jpg",
+            "/images/studios/thecozyroom1.jpg",
+            "/images/studios/thecozyroom2.jpg",
+            "/images/studios/thecozyroom3.jpg",
         ],
     },
     {
-        title: "Podcast Suite",
+        title: "The Grid Room",
         images: [
-            "/images/demostudio.jpg",
-            "/images/demostudio.jpg",
-            "/images/demostudio.jpg",
+            "/images/studios/thegridroom1.jpg",
+            "/images/studios/thegridroom2.jpg",
+            "/images/studios/thegridroom3.jpg",
+            "/images/studios/thegridroom4.jpg",
+        ],
+    },
+    {
+        title: "Prestige Room",
+        images: [
+            "/images/studios/prestigeroom.jpg",
+            "/images/studios/prestigeroom2.jpg",
+            "/images/studios/prestigeroom3.jpg",
+        ],
+    },
+    {
+        title: "De-Rock",
+        images: [
+            "/images/studios/de-rock1.jpg",
+            "/images/studios/de-rock2.jpg",
+            "/images/studios/de-rock3.jpg",
+        ],
+    },
+    {
+        title: "De-Lane",
+        images: [
+            "/images/studios/de-lane1.jpg",
+            "/images/studios/de-lane2.jpg",
+            "/images/studios/de-lane3.jpg",
         ],
     },
 ];
@@ -86,6 +112,9 @@ const EliteSpaces = () => {
                     <MiniGallery images={locations[0].images} name={locations[0].title} />
                     <MiniGallery images={locations[1].images} name={locations[1].title} />
                     <MiniGallery images={locations[2].images} name={locations[2].title} />
+                    <MiniGallery images={locations[3].images} name={locations[3].title} />
+                    <MiniGallery images={locations[4].images} name={locations[4].title} />
+                    <MiniGallery images={locations[5].images} name={locations[5].title} />
 
                 </div>
             </div>

@@ -61,7 +61,7 @@ const Hero = () => {
                                 variants={fromDown}
                                 transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
                                 className="text-lg md:text-xl font-light"
-                            >We provide the high-performance infrastructure, strategy, and execution needed for creators to dominate the digital landscape.</motion.p>
+                            >We provide fully-equipped video, podcast, and content spaces that help creators and brands produce high-quality content, without stress.</motion.p>
                         </div>
                         <motion.div
                             initial="hidden"
