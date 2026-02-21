@@ -80,7 +80,9 @@ const Hero = () => {
                         </motion.div>
                     </div>
                     <div className="p-2 rounded-[50px] bg-my-white shadow-2xl shadow-my-gray/40 relative mx-4 md:mx-0">
-                        <Image src="/" width={500} height={500} className="bg-my-gray rounded-[50px] w-full h-full  min-h-72" alt="" />
+                        <video autoPlay loop muted className="min-h-72 max-h-[80vh] w-full h-full object-cover rounded-[50px]">
+                            <source src="/videos/alphamedia.webm" type="video/webm" />
+                        </video>
                         <div className="absolute shadow-lg shadow-my-gray/10 -bottom-8 md:-bottom-10 lg:-bottom-14 -left-6 md:-left-10 lg:-left-14 bg-my-white w-max rounded-2xl p-3 md:p-6 flex gap-3 items-center">
                             <div className="bg-my-blue/20  w-max p-3 rounded-2xl">
                                 <TrendingUp size={25} className="text-my-blue" />
