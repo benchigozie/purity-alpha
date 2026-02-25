@@ -54,7 +54,7 @@ export async function POST(req: Request) {
       },
     });
 
-    console.log("New lead added:", { name, email, phone, packageSelected, orgName });*/
+    console.log("New lead added:", { name, email, phone, packageSelected, orgName });
 
     return NextResponse.json({ message: "Webhook processed successfully" }, { status: 200 });
   } catch (error: any) {
