@@ -28,7 +28,7 @@ export async function POST(req: Request) {
     const orgName = responses.organizationname?.value ?? "";
 
     await notion.pages.create({
-      parent: { database_id: process.env.NOTION_BOOKINGS_DB! },
+      parent: { database_id: process.env.NOTION_LEAD_DATABASE_ID! },
       properties: {
         "Full Name": { title: [{ text: { content: name } }] },
         "Contact Email": { email },
