@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     const attendee = body.payload.attendees[0];
     const name = attendee.name;
     const email = attendee.email;
-    const phone = attendee.phone;
+    const phone = attendee.phoneNumber;
 
     const responses = body?.payload?.responses ?? {};
     const packageSelected = responses.attendeedesiredpackage?.value ?? [];
