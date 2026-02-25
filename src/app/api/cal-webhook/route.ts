@@ -32,7 +32,9 @@ export async function POST(req: Request) {
       properties: {
         "Full Name": { title: [{ text: { content: name } }] },
         "Contact Email": { email },
-        "Contact Phone": { phone_number: phone },
+        "Contact Phone": {
+          phone_number: phone,
+        },
         "Company": { rich_text: [{ text: { content: orgName } }] },
         "Desired Package": { select: { name: packageSelected[0] || "Custom" } },
       },
