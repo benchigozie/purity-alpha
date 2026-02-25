@@ -14,15 +14,18 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    console.log("FULL BODY:");
-    console.log(JSON.stringify(body, null, 2));
+    // console.log("FULL BODY:");
+    // console.log(JSON.stringify(body, null, 2));
 
-    /*const attendee = body.payload.attendees[0];
+    const attendee = body.payload.attendees[0];
     const name = attendee.name;
     const email = attendee.email;
     const phone = attendee.phone;
-    const packageSelected = body.payload.questions["Which of our packages are you interested in getting?"] || [];
-    const orgName = body.payload.questions["Organization Name"] || "";
+
+    const responses = body?.payload?.responses ?? {};
+    const packageSelected = responses.attendeedesiredpackage?.value ?? [];
+
+    const orgName = responses.organizationname?.value ?? "";
 
     await notion.pages.create({
       parent: { database_id: process.env.NOTION_BOOKINGS_DB! },
