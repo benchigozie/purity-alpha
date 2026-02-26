@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Inter } from "next/font/google";
+import { Suspense } from "react";
 import Script from "next/script";
 import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 
@@ -33,11 +34,11 @@ export default function RootLayout({
 }>) {
 
   const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-  
+
   return (
     <html lang="en">
       <head>
-      <Script
+        <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
           strategy="afterInteractive"
         />
@@ -54,6 +55,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${inter.variable} antialiased`}
       >
         <Header />
+        <Suspense fallback={null}>
+          <AnalyticsTracker />
+        </Suspense>
         <main className="bg-my-white">
           {children}
         </main>
