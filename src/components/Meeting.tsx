@@ -9,20 +9,25 @@ export default function Meeting () {
       const cal = await getCalApi({"namespace":"inspection-session"});
       cal("ui", {"theme":"light","cssVarsPerTheme":{light: { "cal-brand": "#0F172A" }, dark: { "cal-brand": "#0F172A" },},"hideEventTypeDetails":false,"layout":"month_view"});
     })();
+
+    const handleMessage = (e: any) => {
+      if (e.data?.event === "bookingSuccessful") {
+        if (typeof window !== "undefined" && window.gtag) {
+          window.gtag("event", "cal_booking_completed", {
+            event_category: "engagement",
+            event_label: "inspection_session",
+          });
+        }
+      }
+    };
+    
+    window.addEventListener("message", handleMessage);
+
   }, [])
 
-  const handleMessage = (e: any) => {
-    if (e.data?.event === "bookingSuccessful") {
-      if (typeof window !== "undefined" && window.gtag) {
-        window.gtag("event", "cal_booking_completed", {
-          event_category: "engagement",
-          event_label: "inspection_session",
-        });
-      }
-    }
-  };
+  
 
-  window.addEventListener("message", handleMessage);
+  
   
   return <Cal namespace="inspection-session"
     calLink="alpha-media/inspection-session"
