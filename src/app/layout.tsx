@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Inter } from "next/font/google";
+import Script from "next/script";
+import { AnalyticsTracker } from "@/components/AnalyticsTracker";
 
 import "./globals.css";
 import Header from "@/components/Header";
@@ -29,8 +31,25 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+  
   return (
     <html lang="en">
+      <head>
+      <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_ID}');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${inter.variable} antialiased`}
       >
