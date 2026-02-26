@@ -12,7 +12,10 @@ export default function Meeting () {
 
     const handleMessage = (e: any) => {
       if (e.data?.event === "bookingSuccessful") {
-        console.log("MESSAGE EVENT:", e.data);
+        const handleMessage = (e: any) => {
+          console.log("FULL MESSAGE EVENT:", e);
+          console.log("DATA:", e.data);
+        };
         /*if (typeof window !== "undefined" && window.gtag) {
           window.gtag("event", "cal_booking_completed", {
             event_category: "engagement",
@@ -23,6 +26,10 @@ export default function Meeting () {
     };
 
     window.addEventListener("message", handleMessage);
+
+    return () => {
+      window.removeEventListener("message", handleMessage);
+    };
 
   }, [])
 
