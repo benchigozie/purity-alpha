@@ -1,4 +1,4 @@
-"use client" 
+"use client"
 
 import Image from "next/image";
 import { CircleStar } from "lucide-react";
@@ -14,14 +14,24 @@ const Packages = () => {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
                     <div className="relative p-6 md:p-10 rounded-4xl ring ring-my-gray/20 flex flex-col gap-4 md:gap-7 hover:shadow-md hover:ring-my-blue/60 hover:shadow-my-gray/20 transition-all duration-300 group">
+                        <div className="p-4 rounded-3xl bg-my-green/15 w-max">
+                            <Image src="/images/start.png" alt="" width={35} height={35} />
+                        </div>
+                        <h3 className="font-bold text-3xl text-my-black">Starter</h3>
+                        <p>Designed for early-stage creators ready to move to a structured, professional production environment.</p>
+                        <p className="text-my-black my-3 text-4xl font-bold">N30k<span className="text-my-gray text-base font-normal">/session</span></p>
+                        <button onClick={() => scrollToId('booking')} className="font-semibold text-my-white hover:text-my-black hover:ring hover:ring-my-black w-full rounded-full p-3 bg-my-black hover:bg-my-white transition-colors duration-300 hover:cursor-pointer">Inquire Now</button>
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-8 mx-auto left-1/2 -translate-x-1/2 bg-my-blue py-2 px-5 rounded-full text-my-white text-xs">Starting Point</div>
+                    </div>
+                    <div className="relative p-6 md:p-10 rounded-4xl ring ring-my-gray/20 flex flex-col gap-4 md:gap-7 hover:shadow-md hover:ring-my-blue/60 hover:shadow-my-gray/20 transition-all duration-300 group">
                         <div className="p-4 rounded-3xl bg-my-blue/10 w-max">
                             <Image src="/images/medal.png" alt="" width={35} height={35} />
                         </div>
                         <h3 className="font-bold text-3xl text-my-black">Creator</h3>
                         <p>Suited for content creators or single individuals seeking professional infrastructure.</p>
-                        <p className="text-my-black my-3 text-4xl font-bold">N80k<span className="text-my-gray text-base font-normal">/mo</span></p>
+                        <p className="text-my-black my-3 text-4xl font-bold">N80k<span className="text-my-gray text-base font-normal">/session</span></p>
                         <button onClick={() => scrollToId('booking')} className="font-semibold text-my-white hover:text-my-black hover:ring hover:ring-my-black w-full rounded-full p-3 bg-my-black hover:bg-my-white transition-colors duration-300 hover:cursor-pointer">Inquire Now</button>
-                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-8 mx-auto left-1/2 -translate-x-1/2 bg-my-blue py-2 px-5 rounded-full text-my-white text-xs">Starting Point</div>
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-8 mx-auto left-1/2 -translate-x-1/2 bg-my-blue py-2 px-5 rounded-full text-my-white text-xs">For Creators</div>
                     </div>
                     <div className="relative p-6 md:p-10 rounded-4xl ring ring-my-gray/20 flex flex-col gap-4 md:gap-7 hover:shadow-md hover:ring-my-blue/60 hover:shadow-my-gray/20 transition-all duration-300 group">
                         <div className="p-4 rounded-3xl bg-yellow-100 w-max">
@@ -29,7 +39,7 @@ const Packages = () => {
                         </div>
                         <h3 className="font-bold text-3xl text-my-black">Professional</h3>
                         <p>For Industry experts who want to build a brand and establish their authority.</p>
-                        <p className="text-my-black my-3 text-4xl font-bold">N150k<span className="text-my-gray text-base font-normal">/mo</span></p>
+                        <p className="text-my-black my-3 text-4xl font-bold">N150k<span className="text-my-gray text-base font-normal">/session</span></p>
                         <button onClick={() => scrollToId('booking')} className="font-semibold text-my-white hover:text-my-black hover:ring hover:ring-my-black w-full rounded-full p-3 bg-my-black hover:bg-my-white transition-colors duration-300 hover:cursor-pointer">Inquire Now</button>
                         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-8 mx-auto left-1/2 -translate-x-1/2 bg-my-blue py-2 px-5 rounded-full text-my-white text-xs">Elite Choice</div>
                     </div>
@@ -39,7 +49,7 @@ const Packages = () => {
                         </div>
                         <h3 className="font-bold text-3xl text-my-black">Enterprise</h3>
                         <p>For businesses, brands and organizations looking to scale production.</p>
-                        <p className="text-my-black my-3 text-4xl font-bold">N350k<span className="text-my-gray text-base font-normal">/mo</span></p>
+                        <p className="text-my-black my-3 text-4xl font-bold">N350k<span className="text-my-gray text-base font-normal">/session</span></p>
                         <button onClick={() => scrollToId('booking')} className="font-semibold text-my-white hover:text-my-black hover:ring hover:ring-my-black w-full rounded-full p-3 bg-my-black hover:bg-my-white transition-colors duration-300 hover:cursor-pointer">Inquire Now</button>
                         <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-8 mx-auto left-1/2 -translate-x-1/2 bg-my-blue py-2 px-5 rounded-full text-my-white text-xs">Built for Growth</div>
                     </div>

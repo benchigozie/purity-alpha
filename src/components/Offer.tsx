@@ -21,7 +21,7 @@ const Offer = () => {
                             <h2 className="text-my-black text-4xl md:text-6xl lg:text-7xl font-bold">Start Your Journey for</h2>
                             <div className="flex items-baseline">
                                 <p className="text-my-green text-4xl md:text-6xl lg:text-7xl font-bold"><span className="font-inter">&#8358;</span>30,000</p>
-                                <p className="text-xl font-semibold">/month</p>
+                                <p className="text-xl font-semibold">/session</p>
                             </div>
                         </div>
                         <p className="text-xl">Exclusively for single creators. Get started at our lowest entry price for your first 3 months. No barriers, just growth.</p>
@@ -30,7 +30,7 @@ const Offer = () => {
                                 <button className="w-full font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-6 py-3 md:px-8 md:py-5 bg-my-deep-green  text-my-white hover:scale-105 flex gap-3 justify-center items-center" ><span>Claim Offer Now</span> <span><Image src="/images/power.png" alt="" width={13} height={13} /></span></button>
                             </div>
                             <div onClick={() => scrollToId("membership")}>
-                                <button className="w-full flex gap-3 font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-4 py-3 md:px-8 md:py-5 bg-my-white hover:scale-105 hover:bg-my-white ring ring-my-gray/20 items-center justify-center" ><span className="p-1 h-max rounded-full bg-my-green"> <Check className="text-my-white relative top-0.5" size={15} strokeWidth={2.2} color="#FBFCFD" /></span> <span>Standard Price <span className="font-inter">&#8358;</span>80k/mo</span></button>
+                                <button className="w-full flex gap-3 font-semibold transition-all duration-300 hover:cursor-pointer rounded-3xl px-4 py-3 md:px-8 md:py-5 bg-my-white hover:scale-105 hover:bg-my-white ring ring-my-gray/20 items-center justify-center" ><span className="p-1 h-max rounded-full bg-my-green"> <Check className="text-my-white relative top-0.5" size={15} strokeWidth={2.2} color="#FBFCFD" /></span> <span>Standard Price <span className="font-inter">&#8358;</span>80k/sess</span></button>
                             </div>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const Offer = () => {
                         <p className="font-bold text-3xl md:text-5xl text-my-black">
                             <span><span className="font-inter">&#8358;</span>30k</span>
                         </p>
-                        <p className="font-bold">for first 3 months</p>
+                        <p className="font-bold">for first 3 sessions</p>
                     </div>
                 </div>
             </div>
