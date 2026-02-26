@@ -12,15 +12,16 @@ export default function Meeting () {
 
     const handleMessage = (e: any) => {
       if (e.data?.event === "bookingSuccessful") {
-        if (typeof window !== "undefined" && window.gtag) {
+        console.log("MESSAGE EVENT:", e.data);
+        /*if (typeof window !== "undefined" && window.gtag) {
           window.gtag("event", "cal_booking_completed", {
             event_category: "engagement",
             event_label: "inspection_session",
           });
-        }
+        }*/
       }
     };
-    
+
     window.addEventListener("message", handleMessage);
 
   }, [])
