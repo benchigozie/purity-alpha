@@ -11,16 +11,22 @@ export default function Meeting () {
     })();
 
     const handleMessage = (e: any) => {
+
+      if (e.origin !== "https://app.cal.com") return;
+
+      const type = e.data?.type;
        
-          console.log("FULL MESSAGE EVENT:", e);
-          console.log("DATA:", e.data);
-          
-        /*if (typeof window !== "undefined" && window.gtag) {
-          window.gtag("event", "cal_booking_completed", {
-            event_category: "engagement",
-            event_label: "inspection_session",
-          });
-        }*/
+          //console.log("FULL MESSAGE EVENT:", e);
+          //console.log("DATA:", e.data);
+
+          if (type === "bookingSuccessful" || type === "bookingSuccessfulV2") {
+            if (window.gtag) {
+              window.gtag("event", "cal_booking_completed", {
+                session_type: "inspection",
+                source: "cal_embed",
+              });
+            }
+          }
       
     };
 
