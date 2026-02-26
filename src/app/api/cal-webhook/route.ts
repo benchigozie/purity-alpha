@@ -14,9 +14,6 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    // console.log("FULL BODY:");
-    // console.log(JSON.stringify(body, null, 2));
-
     const attendee = body.payload.attendees[0];
     const name = attendee.name;
     const email = attendee.email;
@@ -34,6 +31,9 @@ export async function POST(req: Request) {
         "Contact Email": { email },
         "Contact Phone": {
           phone_number: phone,
+        },
+        "Lead Source": {
+          select: { name: "Website" }
         },
         "Company": { rich_text: [{ text: { content: orgName } }] },
         "Desired Package": { select: { name: packageSelected[0] || "Custom" } },
