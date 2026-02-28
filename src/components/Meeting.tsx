@@ -26,6 +26,11 @@ export default function Meeting () {
                 source: "cal_embed",
               });
             }
+            if (window.fbq) {
+              window.fbq("track", "Schedule", {
+                content_name: "Inspection Session",
+              });
+            }
           }
       
     };
