@@ -50,7 +50,10 @@ export default function RootLayout({
             gtag('config', '${GA_ID}');
           `}
         </Script>
-        <Script>{`
+        <Script 
+        id="meta-pixel"
+        strategy="afterInteractive"
+        >{`
           !function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod ?
             n.callMethod.apply(n, arguments) : n.queue.push(arguments)};
@@ -64,7 +67,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
           `}
         </Script>
         <noscript><img height="1" width="1" style={{ display: "none" }}
-          src="[https://www.facebook.com/tr?id=1637731120440004&ev=PageView&noscript=1](https://www.facebook.com/tr?id=1637731120440004&ev=PageView&noscript=1)"
+          src="https://www.facebook.com/tr?id=1637731120440004&ev=PageView&noscript=1"
         /></noscript>
 
       </head>
