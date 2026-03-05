@@ -7,11 +7,13 @@ import Process from "@/components/Process";
 import Packages from "@/components/Packages";
 import Testimonials from "@/components/Testimonials";
 import Offer from "@/components/Offer";
+import Insight from "@/components/Insight";
 
 export default function Home() {
   return (
     <div className="bg-my-white">
       <Hero />
+      <Insight />
       <Offer />
       <EliteSpaces />
       <Process />

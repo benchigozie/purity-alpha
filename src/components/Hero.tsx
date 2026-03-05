@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Button from "./Button"
-import { TrendingUp } from "lucide-react"
+import { TrendingUp, Check } from "lucide-react"
 import { motion } from "framer-motion"
 import { scrollToId } from "@/utils/ScrollToId"
 
@@ -51,8 +51,8 @@ const Hero = () => {
                                 animate="visible"
                                 variants={fromLeft}
                                 transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                                className="text-my-black text-4xl  md:text-6xl lg:text-7xl font-bold mt-3 md:mt-0">Scale Your <br /><span className="text-transparent bg-linear-to-r from-my-blue to-my-green bg-clip-text"
-                                >Creative</span> Power</motion.h1>
+                                className="text-my-black text-4xl  md:text-6xl lg:text-7xl font-bold mt-3 md:mt-0">Create Content <br /><span className="text-transparent bg-linear-to-r from-my-blue to-my-green bg-clip-text"
+                                >With Ease</span></motion.h1>
                         </div>
                         <div className="overflow-hidden">
                             <motion.p
@@ -62,6 +62,32 @@ const Hero = () => {
                                 transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
                                 className="text-lg md:text-xl font-light"
                             >We provide fully-equipped video, podcast, and content spaces that help creators and brands produce high-quality content, without stress.</motion.p>
+                             <motion.div
+                                initial="hidden"
+                                animate="visible"
+                                variants={fromDown}
+                                transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
+                                className="text-lg flex flex-col lg:flex-row gap-2 mt-2 md:gap-4 md:text-xl font-light"
+                            >
+                                <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                    <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                        <Check size={13} className="text-white" />
+                                    </div>
+                                    <p className="text-[15px]">No Setup Headaches</p>
+                                </div>
+                                <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                    <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                        <Check size={13} className="text-white" />
+                                    </div>
+                                    <p className="text-[15px]">No Tech Frustration</p>
+                                </div>
+                                <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                    <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                        <Check size={13} className="text-white" />
+                                    </div>
+                                    <p className="text-[15px]">No wasted time</p>
+                                </div>
+                            </motion.div>
                         </div>
                         <motion.div
                             initial="hidden"
@@ -79,7 +105,7 @@ const Hero = () => {
                             </div>
                         </motion.div>
                     </div>
-                    <div className="p-2 rounded-[50px] bg-my-white shadow-2xl shadow-my-gray/40 relative mx-4 md:mx-0">
+                    <div className="p-2 rounded-[50px] bg-my-white shadow-2xl h-max shadow-my-gray/40 relative mx-4 md:mx-0">
                         <video autoPlay loop muted className="min-h-72 max-h-[70vh] md:max-h-[80vh] w-full h-full object-cover rounded-[50px]">
                             <source src="/videos/alphamedia.webm" type="video/webm" />
                         </video>
