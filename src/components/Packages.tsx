@@ -1,7 +1,7 @@
 "use client"
 
 import Image from "next/image";
-import { CircleStar } from "lucide-react";
+import { CircleStar, Check } from "lucide-react";
 import { scrollToId } from "@/utils/ScrollToId";
 
 const Packages = () => {
@@ -13,45 +13,164 @@ const Packages = () => {
                     <p className="text-lg max-w-xl">Scalable investment tiers for every stage of your creative evolution.</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
-                    <div className="relative p-6 md:p-10 rounded-4xl ring ring-my-gray/20 flex flex-col gap-4 md:gap-7 hover:shadow-md hover:ring-my-blue/60 hover:shadow-my-gray/20 transition-all duration-300 group">
+                    <div className="relative p-6 md:p-10 rounded-4xl ring ring-my-gray/20 flex flex-col gap-4 md:gap-5 hover:shadow-md hover:ring-my-blue/60 hover:shadow-my-gray/20 transition-all duration-300 group">
                         <div className="p-4 rounded-3xl bg-my-green/15 w-max">
                             <Image src="/images/start.png" alt="" width={35} height={35} />
                         </div>
                         <h3 className="font-bold text-3xl text-my-black">Starter</h3>
-                        <p>Designed for early-stage creators ready to move to a structured, professional production environment.</p>
+                        <p>For early-stage creators ready to step into a structured production space.</p>
+                        <div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Clean Wall Background</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Tripod setup</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Microphone for clear audio</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Ring light setup</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <p className="text-sm text-my-gray/80">BEST FOR</p>
+                            <p className="font-semibold">Simple talking videos, practice shoots, and entry-level content creation.</p>
+                        </div>
                         <p className="text-my-black my-3 text-4xl font-bold">N30k<span className="text-my-gray text-base font-normal">/session</span></p>
                         <button onClick={() => scrollToId('booking')} className="font-semibold text-my-white hover:text-my-black hover:ring hover:ring-my-black w-full rounded-full p-3 bg-my-black hover:bg-my-white transition-colors duration-300 hover:cursor-pointer">Inquire Now</button>
-                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-8 mx-auto left-1/2 -translate-x-1/2 bg-my-blue py-2 px-5 rounded-full text-my-white text-xs">Starting Point</div>
                     </div>
                     <div className="relative p-6 md:p-10 rounded-4xl ring ring-my-gray/20 flex flex-col gap-4 md:gap-7 hover:shadow-md hover:ring-my-blue/60 hover:shadow-my-gray/20 transition-all duration-300 group">
                         <div className="p-4 rounded-3xl bg-my-blue/10 w-max">
                             <Image src="/images/medal.png" alt="" width={35} height={35} />
                         </div>
                         <h3 className="font-bold text-3xl text-my-black">Creator</h3>
-                        <p>Suited for content creators or single individuals seeking professional infrastructure.</p>
+                        <p>For early-stage creators ready to step into a structured production space.</p>
+                        <div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Clean Wall Background</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Tripod setup</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Microphone for clear audio</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Ring light setup</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <p className="text-sm text-my-gray/80">BEST FOR</p>
+                            <p className="font-semibold">Simple talking videos, practice shoots, and entry-level content creation.</p>
+                        </div>
                         <p className="text-my-black my-3 text-4xl font-bold">N80k<span className="text-my-gray text-base font-normal">/session</span></p>
                         <button onClick={() => scrollToId('booking')} className="font-semibold text-my-white hover:text-my-black hover:ring hover:ring-my-black w-full rounded-full p-3 bg-my-black hover:bg-my-white transition-colors duration-300 hover:cursor-pointer">Inquire Now</button>
-                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-8 mx-auto left-1/2 -translate-x-1/2 bg-my-blue py-2 px-5 rounded-full text-my-white text-xs">For Creators</div>
+
                     </div>
                     <div className="relative p-6 md:p-10 rounded-4xl ring ring-my-gray/20 flex flex-col gap-4 md:gap-7 hover:shadow-md hover:ring-my-blue/60 hover:shadow-my-gray/20 transition-all duration-300 group">
                         <div className="p-4 rounded-3xl bg-yellow-100 w-max">
                             <Image src="/images/wand.png" alt="" width={35} height={35} />
                         </div>
                         <h3 className="font-bold text-3xl text-my-black">Professional</h3>
-                        <p>For Industry experts who want to build a brand and establish their authority.</p>
+                        <p>For early-stage creators ready to step into a structured production space.</p>
+                        <div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Clean Wall Background</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Tripod setup</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Microphone for clear audio</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Ring light setup</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <p className="text-sm text-my-gray/80">BEST FOR</p>
+                            <p className="font-semibold">Simple talking videos, practice shoots, and entry-level content creation.</p>
+                        </div>
                         <p className="text-my-black my-3 text-4xl font-bold">N150k<span className="text-my-gray text-base font-normal">/session</span></p>
                         <button onClick={() => scrollToId('booking')} className="font-semibold text-my-white hover:text-my-black hover:ring hover:ring-my-black w-full rounded-full p-3 bg-my-black hover:bg-my-white transition-colors duration-300 hover:cursor-pointer">Inquire Now</button>
-                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-8 mx-auto left-1/2 -translate-x-1/2 bg-my-blue py-2 px-5 rounded-full text-my-white text-xs">Elite Choice</div>
+
                     </div>
                     <div className="relative p-6 md:p-10 rounded-4xl ring ring-my-gray/20 flex flex-col gap-4 md:gap-7 hover:shadow-md hover:ring-my-blue/60 hover:shadow-my-gray/20 transition-all duration-300 group">
                         <div className="p-4 rounded-3xl bg-purple-100 w-max">
                             <CircleStar size={35} className="text-purple-500" />
                         </div>
                         <h3 className="font-bold text-3xl text-my-black">Enterprise</h3>
-                        <p>For businesses, brands and organizations looking to scale production.</p>
+                        <p>For early-stage creators ready to step into a structured production space.</p>
+                        <div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Clean Wall Background</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Tripod setup</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Microphone for clear audio</p>
+                            </div>
+                            <div className="flex items-center gap-2 mt-1 lg:mt-4">
+                                <div className="bg-my-green  w-max p-1 rounded-2xl gap-1">
+                                    <Check size={13} className="text-white" />
+                                </div>
+                                <p className="text-[15px]">Ring light setup</p>
+                            </div>
+                        </div>
+                        <div className="flex flex-col gap-1">
+                            <p className="text-sm text-my-gray/80">BEST FOR</p>
+                            <p className="font-semibold">Simple talking videos, practice shoots, and entry-level content creation.</p>
+                        </div>
                         <p className="text-my-black my-3 text-4xl font-bold">N350k<span className="text-my-gray text-base font-normal">/session</span></p>
                         <button onClick={() => scrollToId('booking')} className="font-semibold text-my-white hover:text-my-black hover:ring hover:ring-my-black w-full rounded-full p-3 bg-my-black hover:bg-my-white transition-colors duration-300 hover:cursor-pointer">Inquire Now</button>
-                        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute -top-8 mx-auto left-1/2 -translate-x-1/2 bg-my-blue py-2 px-5 rounded-full text-my-white text-xs">Built for Growth</div>
+
                     </div>
                     <div className="relative p-6 md:p-10 rounded-4xl ring ring-my-gray/20 flex flex-col gap-4 md:gap-7 hover:shadow-md hover:ring-my-blue/60 hover:shadow-my-gray/20 transition-all duration-300 group">
                         <div className="p-4 rounded-3xl bg-red-100 w-max">

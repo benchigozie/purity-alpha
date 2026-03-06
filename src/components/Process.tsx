@@ -7,11 +7,11 @@ type Card = {
 }
 
 const cards: Card[] = [
-    { icon: '/images/stars.png', heading: "Content Strategy", text: "We turn your ideas into a clear plan that helps you grow your authority and reach the right audience across platforms." },
-    { icon: "/images/video.png", heading: "Video Production", text: "Crisp 4K visuals, clean audio, and cinematic lighting so your content looks and sounds premium."},
-    { icon: "/images/movie.png", heading: "Video Editing", text: "Fast-paced, engaging edits built for attention, trends, and each platform’s algorithm."},    
-    { icon: "/images/script.png", heading: "Script Writing", text: "Scroll-stopping scripts crafted to keep people watching, clicking, and coming back."},    
-    { icon: "/images/content.png", heading: "Content Planning", text: "Simple content systems and calendars that keep you consistent without burning out."},    
+    { icon: '/images/stars.png', heading: "Content Strategy", text: "Helping creators turn ideas into reality with custom roadmaps designed to scale your authority and reach across digital platforms." },
+    { icon: "/images/video.png", heading: "Video Production", text: "Professional 4K recording with cinematic lighting and elite sound engineering to make your content stand out."},
+    { icon: "/images/movie.png", heading: "Video Editing", text: "High-energy cinematic cuts, trending transitions, and viral pacing specifically tailored for each social media platform."},    
+    { icon: "/images/script.png", heading: "Script Writing", text: "Psychology-backed scripts designed for maximum retention, conversion, and community engagement."},    
+    { icon: "/images/content.png", heading: "Content Planning", text: "Organized content calendars and systems to ensure consistent publishing without the creator burnout."},    
 ]
 
 const Process = () => {
