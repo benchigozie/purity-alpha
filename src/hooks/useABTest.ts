@@ -21,6 +21,10 @@ export function useABTest() {
     }
 
     setVariant(v);
+    if (v && typeof window !== "undefined" && window.gtag) {
+      window.gtag('set', { 'cta_variant': v });
+    }
+    
   }, []);
 
   return variant;
