@@ -8,6 +8,7 @@ import Packages from "@/components/Packages";
 import Testimonials from "@/components/Testimonials";
 import Offer from "@/components/Offer";
 import Insight from "@/components/Insight";
+import BookingExperiment from "@/components/BookingTest";
 
 export default function Home() {
   return (
@@ -20,7 +21,7 @@ export default function Home() {
       <Testimonials />
       <CTA />
       <Packages />
-      <BookMeeting />
+      <BookingExperiment />
       <Footer />
     </div>
   );
