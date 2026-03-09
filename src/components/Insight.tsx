@@ -7,7 +7,7 @@ import { scrollToId } from "@/utils/ScrollToId";
 
 function Insight() {
     return (
-        <section className="mt-20 md:mt-16 mx-auto">
+        <section className="my-28 mx-auto">
             <div className="max-w-6xl mx-auto px-3 h-full">
                 <div className="bg-my-white border border-my-gray/15 rounded-4xl md:rounded-[60px] p-7 md:p-14 grid gap-6 lg:gap-1  grid-cols-1 md:grid-cols-[3fr_2fr]">
                     <div className="flex flex-col gap-3">
