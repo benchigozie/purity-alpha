@@ -71,11 +71,11 @@ function LeadForm() {
 
             }
 
-            /*if (window.gtag) {
+            if (window.gtag) {
               window.gtag("event", "generate_lead", {
                 form_name: "contact_form",
               });
-            }*/
+            }
         } catch (err) {
             setErrorMessage("An error occurred while submitting the form. Please try again later.");
             setSubmissionState('error')

@@ -16,8 +16,7 @@ export default function Meeting () {
 
       const type = e.data?.type;
        
-          //console.log("FULL MESSAGE EVENT:", e);
-          //console.log("DATA:", e.data);
+          
 
           if (type === "bookingSuccessful" || type === "bookingSuccessfulV2") {
             if (window.gtag) {
