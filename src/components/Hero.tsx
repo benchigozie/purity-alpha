@@ -55,6 +55,17 @@ const Hero = () => {
                                 >With Ease</span></motion.h1>
                         </div>
                         <div className="overflow-hidden">
+                            <motion.div
+                                initial="hidden"
+                                animate="visible"
+                                variants={fromDown}
+                                transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
+                                className="text-lg flex flex-col mb-4 font-medium md:text-xl"
+                            >
+                                <p>You don't need more gear.</p>
+                                <p>You don't need another idea.</p>
+                                <p>you need the <span className="text-my-blue">right environment</span></p>
+                            </motion.div>
                             <motion.p
                                 initial="hidden"
                                 animate="visible"
@@ -62,18 +73,8 @@ const Hero = () => {
                                 transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
                                 className="text-lg md:text-xl font-light"
                             >At Alpha Media, we provide fully equipped video, podcast and content spaces designed to help you produce high-quality videos for your brand, without stress.</motion.p>
+
                             <motion.div
-                                initial="hidden"
-                                animate="visible"
-                                variants={fromDown}
-                                transition={{ duration: 0.6, delay: 1, ease: "easeOut" }}
-                                className="text-lg flex flex-col mt-3 font-medium md:text-xl"
-                            >
-                               <p>You don't need more gear.</p> 
-                               <p>You don't need another idea.</p>
-                               <p>you need the <span className="text-my-blue">right environment</span></p>
-                            </motion.div>
-                             <motion.div
                                 initial="hidden"
                                 animate="visible"
                                 variants={fromDown}
