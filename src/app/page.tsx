@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import Process from "@/components/Process";
 import Packages from "@/components/Packages";
 import Testimonials from "@/components/Testimonials";
-import Offer from "@/components/Offer";
 import Insight from "@/components/Insight";
 import BookingExperiment from "@/components/BookingTest";
 
@@ -15,7 +14,6 @@ export default function Home() {
     <div className="bg-my-white">
       <Hero />
       <Insight />
-      <Offer />
       <EliteSpaces />
       <Process />
       <Testimonials />
