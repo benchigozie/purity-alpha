@@ -45,7 +45,7 @@ const Footer = () => {
                                     <Image src="/images/facebook.png" width={35} height={35} alt='' />
                                 </a>
                                 <a href="https://www.instagram.com/alphamediang_/" target='_blank' className='relative bottom-1.5'>
-                                    <Image src="/images/instagram.png" width={45} height={45} alt='' />
+                                    <Image src="/images/instagram.png" width={44} height={44} alt='' />
                                 </a>
                                 <a href="https://www.tiktok.com/@alphamediang_?lang=en" target='_blank'>
                                     <Image src="/images/tiktok.png" width={35} height={35} alt='' />
