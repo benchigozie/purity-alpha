@@ -10,8 +10,15 @@ export default function BookingExperiment() {
   if (!variant) return null;
 
   if (variant === "A") {
-    return <BookMeeting />;
+
+    return (
+      <div id="booking">
+        <BookMeeting />;
+      </div>)
   }
 
-  return <LeadForm />;
+  return  (
+    <div id="booking">
+      <LeadForm />;
+    </div>);
 }
