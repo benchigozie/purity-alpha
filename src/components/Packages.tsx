@@ -34,7 +34,7 @@ const Packages = () => {
                             <p className="text-[12px] leading-tight mt-1">Simple talking videos, practice shoots, and entry-level content creation.</p>
                         </div>
                         <p className="text-my-black mt-4 text-3xl font-bold">₦25,000 <span className="text-my-gray text-xs font-normal">/ Hour</span></p>
-                        <button onClick={() => scrollToId('booking')} className="font-semibold text-my-black ring-1 ring-my-black/10 w-full rounded-full p-3 bg-my-gray/5 hover:bg-my-black hover:text-white transition-all duration-300">Inquire Now</button>
+                        <button onClick={() => scrollToId('cta')} className="font-semibold text-my-black ring-1 ring-my-black/10 w-full rounded-full p-3 bg-my-gray/5 hover:bg-my-black hover:text-white transition-all duration-300 cursor-pointer">Inquire Now</button>
                     </div>
 
                     {/* Creator */}
@@ -57,7 +57,7 @@ const Packages = () => {
                             <p className="text-[12px] leading-tight mt-1">YouTube videos, brand content, and social media authority building.</p>
                         </div>
                         <p className="text-my-black mt-4 text-3xl font-bold">₦80,000 <span className="text-my-gray text-xs font-normal">/ Hour</span></p>
-                        <button onClick={() => scrollToId('booking')} className="font-semibold text-my-black ring-1 ring-my-black/10 w-full rounded-full p-3 bg-my-gray/5 hover:bg-my-black hover:text-white transition-all duration-300">Inquire Now</button>
+                        <button onClick={() => scrollToId('cta')} className="font-semibold text-my-black ring-1 ring-my-black/10 w-full rounded-full p-3 bg-my-gray/5 hover:bg-my-black hover:text-white transition-all duration-300 cursor-pointer">Inquire Now</button>
                     </div>
 
                     {/* Professional - Best Value */}
@@ -81,7 +81,7 @@ const Packages = () => {
                             <p className="text-[12px] leading-tight mt-1">Thought leaders, coaches, and experts building authority-driven content.</p>
                         </div>
                         <p className="text-my-blue mt-4 text-3xl font-bold">₦100,000 <span className="text-my-gray text-xs font-normal">/ Hour</span></p>
-                        <button onClick={() => scrollToId('booking')} className="font-semibold text-white w-full rounded-full p-3 bg-my-blue hover:bg-my-blue/90 transition-all duration-300 shadow-lg shadow-my-blue/30">Select Alpha</button>
+                        <button onClick={() => scrollToId('cta')} className="font-semibold text-white w-full rounded-full p-3 bg-my-blue hover:bg-my-blue/90 transition-all duration-300 shadow-lg shadow-my-blue/30 cursor-pointer">Select Alpha</button>
                     </div>
 
                     {/* Enterprise */}
@@ -104,7 +104,7 @@ const Packages = () => {
                             <p className="text-[12px] leading-tight mt-1">Panel discussions, interviews, corporate content, and large-scale production.</p>
                         </div>
                         <p className="text-my-black mt-4 text-3xl font-bold">₦150,000 <span className="text-my-gray text-xs font-normal">/ Hour</span></p>
-                        <button onClick={() => scrollToId('booking')} className="font-semibold text-my-black ring-1 ring-my-black/10 w-full rounded-full p-3 bg-my-gray/5 hover:bg-my-black hover:text-white transition-all duration-300">Inquire Now</button>
+                        <button onClick={() => scrollToId('cta')} className="font-semibold text-my-black ring-1 ring-my-black/10 w-full rounded-full p-3 bg-my-gray/5 hover:bg-my-black hover:text-white transition-all duration-300 cursor-pointer">Inquire Now</button>
                     </div>
 
                 </div>

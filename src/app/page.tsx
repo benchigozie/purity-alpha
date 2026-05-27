@@ -1,4 +1,3 @@
-import BookMeeting from "@/components/BookMeeting";
 import CTA from "@/components/CTA";
 import EliteSpaces from "@/components/EliteSpaces";
 import Footer from "@/components/Footer";
@@ -7,7 +6,7 @@ import Process from "@/components/Process";
 import Packages from "@/components/Packages";
 import Testimonials from "@/components/Testimonials";
 import Insight from "@/components/Insight";
-import BookingExperiment from "@/components/BookingTest";
+
 
 export default function Home() {
   return (
@@ -17,9 +16,8 @@ export default function Home() {
       <EliteSpaces />
       <Process />
       <Testimonials />
-      <CTA />
       <Packages />
-      <BookingExperiment />
+      <CTA />
       <Footer />
     </div>
   );

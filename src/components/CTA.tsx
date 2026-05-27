@@ -1,14 +1,29 @@
 "use client"
 import { scrollToId } from "@/utils/ScrollToId"
 import { Rocket } from "lucide-react"
+import { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
 
 const CTA = () => {
+
+    useEffect(() => {
+        (async function () {
+            const cal = await getCalApi({ "namespace": "30min" });
+            cal("ui", { "hideEventTypeDetails": false, "layout": "month_view" });
+        })();
+    }, [])
+
     return (
-        <section className="mt-16 md:mt-22 mx-auto px-3">
+        <section className="mt-16 md:mt-22 mx-auto px-3" id="cta">
             <div className="max-w-6xl mx-auto h-full flex flex-col items-center gap-5 md:gap-9 rounded-4xl md:rounded-[60px] bg-linear-to-r from-my-blue to-my-green px-5 md:px-15 py-18 md:py-24 text-my-white text-center shadow-2xl shadow-my-blue/40">
                 <h2 className="text-3xl md:text-7xl font-bold px-2 md:px-0">Ready to Get Started?</h2>
                 <p className="text-lg md:text-xl max-w-150 px-2 md:px-0">Join the elite circle of creators scaling with professional strategy and gear. Your journey starts here.</p>
-                <button onClick={() => scrollToId('membership')} className="flex items-center gap-3 bg-my-white px-7 md:px-14 py-4 md:py-6 rounded-2xl md:rounded-4xl w-max mx-auto text-my-black font-semibold md:font-bold text-lg md:text-2xl hover:scale-105 duration-300 transition-all cursor-pointer"><span>Book a Session</span><Rocket size={25}/></button>
+                <button
+                    data-cal-namespace="30min"
+                    data-cal-link="puritygroups/30min"
+                    data-cal-config='{"layout":"month_view","useSlotsViewOnSmallScreen":"true"}'
+                    onClick={() => scrollToId('membership')}
+                    className="flex items-center gap-3 bg-my-white px-7 md:px-14 py-4 md:py-6 rounded-2xl md:rounded-4xl w-max mx-auto text-my-black font-semibold md:font-bold text-lg md:text-2xl hover:scale-105 duration-300 transition-all cursor-pointer"><span>Book a Session</span><Rocket size={25} /></button>
             </div>
         </section>
     )
